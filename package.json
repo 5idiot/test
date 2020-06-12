@@ -26,7 +26,6 @@
   "homepage": "https://github.com/Jerenaux/basic-mmo-phaser#readme",
   "dependencies": {
     "express": "^4.15.2",
-    "phaser": "^3.23.0",
     "socket.io": "^1.7.3"
   }
 }

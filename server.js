@@ -39,10 +39,6 @@ io.on('connection',function(socket){
             io.emit('remove',socket.player.id);
         });
     });
-
-    socket.on('test',function(){
-        console.log('test received');
-    });
 });
 
 function getAllPlayers(){
