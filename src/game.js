@@ -25,7 +25,7 @@ Game.init = function(){
 };
 
 Game.preload = function() {
-    game.load.image('sprite','assets/sprites/sprite.png');
+    game.load.image('sprite','assets/sprite.png');
     game.load.image('oo', 'assets/oo.png');
     game.load.image('xx', 'assets/xx.png');
 };
