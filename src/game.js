@@ -18,7 +18,8 @@ var DescriptionList = ["질병관리본부의 전화번호는 1399가 아닌 133
 "매일 두 번 이상 환기하고, 자주 소독하기를 권고하고 있다.", "코로나블루를 극복하기 위한 심리상담 핫라인은 자가격리자뿐만 아니라 일반 국민도 이용할 수 있다.", "코로나블루를 극복하기 위해 1577-0119를 통해 심리상담을 신청할 수 있다.", 
 "코로나 예방을 위해 30초 이상 손을 씻어야 한다.", "감염을 일으키는 돌기 형태의 스파이크 단백질이 존재하는데, 바이러스의 가장 바깥쪽 방어막 역할을 하는 지방질 성분의 ‘엔벨로프’에 달라붙어 있다. 이를 계면활성제로 제거할 수 있기 때문에 손을 비누로 씻어야 한다."]
 
-const textBoxBackgroundColor = 'rgba(127,127,0,0.5)';
+// const textBoxBackgroundColor = 'rgba(102,184,196,0.3)';
+const textBoxBackgroundColor = null;
 
 Game.init = function(){
     game.stage.disableVisibilityChange = true;
@@ -54,12 +55,12 @@ Game.create = function(){
     
 
     textA = ProblemList[0];
-    probA = game.add.text(300, 400, textA,  { font: "32px Arial", fill: '#ffffff', backgroundColor: textBoxBackgroundColor, wordWrap: true, wordWrapWidth: 450 });
+    probA = game.add.text(300, 400, textA,  { font: "32px Arial", fill: '#ffffff', backgroundColor: textBoxBackgroundColor, wordWrap: true, wordWrapWidth: 450, boundsAlignV: "middle" });
     probA.lineSpacing = 20;
     probA.alpha = 1;
     
     textB = ProblemList[1];
-    probB = game.add.text(300, 400, textB,  { font: "32px Arial", fill: '#ffffff', backgroundColor: textBoxBackgroundColor, wordWrap: true, wordWrapWidth: 450 });
+    probB = game.add.text(300, 400, textB,  { font: "32px Arial", fill: '#ffffff', backgroundColor: textBoxBackgroundColor, wordWrap: true, wordWrapWidth: 450, boundsAlignV: "middle" });
     probB.lineSpacing = 20;
     probB.alpha = 0;
 
