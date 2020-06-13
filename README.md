@@ -1,16 +1,18 @@
-# basic-mmo-phaser
-Very basic multiplayer online game example made with Phaser, Node.js and Socket.io.
+# QUIZ-CORONA
+- Phaser, Node.js, Socket.io 를 이용해서 제작한 온라인 기반 코로나 멀티플레이 퀴즈 게임입니다. 
+- 여러 명의 사용자가 동시에 접속해서 골든벨처럼 정해진 시간(약 5~10초 간격)에 맞춰서 OX 퀴즈를 풀게 되어있습니다.
+- 현재는 구현이 되어있지 않지만, 틀리게 되면 이후에는 참여가 불가능하고 관전만 가능한 구조로 변경할 예정입니다.(혹은 간단한 미니게임 요소를 추가해서 패자부활전도 가능하도록)
+- 마찬가지로 구현은 되어 있지 않지만, 최후의 1인은 코로나 관련 지식이 풍부하다는 것을 카카오톡을 통해서 자랑할 수 있도록 하여 약간의 경쟁 요소도 도입하여 모두가 코로나 대처 지식을 재미있으면서도 간단하게 습득할 수 있도록 하는 게임입니다. 
+- 또, 카카오톡등 sns의 공유 기능을 이용하여 간단하게 즐기면서, 멀리 전파될 수 있도록 하여 모두가 약간의 경각심이라도 가질 수 있게 하는 것이 목적입니다. 
 
-The tutorial corresponding to this game can be found [here](http://www.dynetisgames.com/2017/03/06/how-to-make-a-multiplayer-online-game-with-phaser-socket-io-and-node-js/).
 
-:fire: If you are interested in this project, you may also be interested in [Westward](https://github.com/Jerenaux/westward), an open source Javascript MMORPG that I am working on! :rocket:
 
-## Installing and running the game
 
-For the client, Phaser is included in the code (`js/phaser.js`). You will need [npm](https://www.npmjs.com/) to install the Node.js packages required for the server. To run the server, you'll need to have Node.js installed.
 
-Clone the repository. Inside the newly created directory, run `npm install` to install the Node.js packages listed in `package.json`. Then run `node server.js` to start the server. The server will listen to connections on port `8081`; you can change that behaviour by editing the code. You can access the app by navigating to http://localhost:8081/.
+## 게임 참여 및 설치
 
-## Donate
+- 간단하게 https://quizcorona.mybluemix.net/ 로 접속하여 이용가능합니다. 
+- 코드를 수정하고 싶은 경우에는 코드를 받아서, `node.js`를 설치하고, `npm install`을 하는 것만으로 간단하게 테스트 및 수정이 가능합니다. 
+- 터미널에 `node server.js`를 쳐서 서버를 실행하고 , 클라이언트는 브라우저를 이용해서  `http://localhost:8081/` 에 접속하여 실행할 수 있습니다. 
+- IBM의 Cloud Foundry 서비스 및 Continuous Delivery 서비스를 이용하여 자동 빌드 및 배포를 진행하였습니다.
 
-If you want to support me to make more open-source code and tutorials like this one, consider having a look at my [donation page](http://www.dynetisgames.com/donate/donation). In particular, take a minute to have a look at my [Patreon page](https://www.patreon.com/jeromerenaux), where you can find a listing of rewards for various levels of recurring contributions!
