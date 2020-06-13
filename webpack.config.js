@@ -3,10 +3,16 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: "./server.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname + "/dist")
   },
-  mode: "none"
+  mode: "none",
+  node: {
+    fs: "empty",
+    net : "empty",
+    tls : "empty"
+ }
+ 
 };
